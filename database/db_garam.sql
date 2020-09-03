@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 22 Agu 2020 pada 18.30
--- Versi server: 10.4.11-MariaDB
--- Versi PHP: 7.2.31
+-- Generation Time: Sep 03, 2020 at 03:41 PM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.2.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db_omahbaba`
+-- Database: `db_garam`
 --
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_akses`
+-- Table structure for table `tb_akses`
 --
 
 CREATE TABLE `tb_akses` (
@@ -38,7 +38,7 @@ CREATE TABLE `tb_akses` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `tb_akses`
+-- Dumping data for table `tb_akses`
 --
 
 INSERT INTO `tb_akses` (`id_akses`, `id_submenu`, `id_tipeuser`, `view`, `add`, `edit`, `delete`) VALUES
@@ -79,12 +79,178 @@ INSERT INTO `tb_akses` (`id_akses`, `id_submenu`, `id_tipeuser`, `view`, `add`, 
 (93, 36, 1, '1', '1', '1', '1'),
 (94, 37, 1, '1', '1', '1', '1'),
 (95, 38, 1, '1', '1', '1', '1'),
-(96, 39, 1, '1', '1', '1', '1');
+(96, 39, 1, '1', '1', '1', '1'),
+(97, 40, 1, '1', '1', '1', '1'),
+(98, 41, 1, '1', '1', '1', '1'),
+(222, 1, 28, '0', '0', '0', '0'),
+(223, 2, 28, '0', '0', '0', '0'),
+(224, 3, 28, '1', '0', '0', '0'),
+(225, 4, 28, '1', '0', '0', '0'),
+(226, 5, 28, '1', '0', '0', '0'),
+(227, 6, 28, '1', '0', '0', '0'),
+(228, 7, 28, '1', '0', '0', '0'),
+(229, 8, 28, '1', '0', '0', '0'),
+(230, 9, 28, '1', '0', '0', '0'),
+(231, 10, 28, '1', '0', '0', '0'),
+(232, 11, 28, '1', '0', '0', '0'),
+(233, 12, 28, '1', '0', '0', '0'),
+(234, 13, 28, '1', '0', '0', '0'),
+(235, 14, 28, '1', '0', '0', '0'),
+(236, 15, 28, '1', '0', '0', '0'),
+(237, 16, 28, '1', '0', '0', '0'),
+(238, 17, 28, '1', '0', '0', '0'),
+(239, 18, 28, '1', '0', '0', '0'),
+(240, 19, 28, '1', '0', '0', '0'),
+(241, 20, 28, '1', '0', '0', '0'),
+(242, 21, 28, '1', '0', '0', '0'),
+(243, 22, 28, '1', '0', '0', '0'),
+(244, 23, 28, '1', '0', '0', '0'),
+(245, 24, 28, '1', '0', '0', '0'),
+(246, 25, 28, '1', '0', '0', '0'),
+(247, 26, 28, '1', '0', '0', '0'),
+(248, 27, 28, '1', '0', '0', '0'),
+(249, 28, 28, '1', '0', '0', '0'),
+(250, 29, 28, '1', '0', '0', '0'),
+(251, 30, 28, '1', '0', '0', '0'),
+(252, 31, 28, '1', '0', '0', '0'),
+(253, 32, 28, '1', '0', '0', '0'),
+(254, 33, 28, '1', '0', '0', '0'),
+(255, 34, 28, '1', '0', '0', '0'),
+(256, 35, 28, '1', '0', '0', '0'),
+(257, 36, 28, '1', '0', '0', '0'),
+(258, 37, 28, '1', '0', '0', '0'),
+(259, 38, 28, '1', '0', '0', '0'),
+(260, 39, 28, '1', '0', '0', '0'),
+(261, 40, 28, '1', '0', '0', '0'),
+(262, 41, 28, '1', '0', '0', '0'),
+(263, 1, 29, '1', '0', '0', '0'),
+(264, 2, 29, '1', '0', '0', '0'),
+(265, 3, 29, '1', '0', '0', '0'),
+(266, 4, 29, '1', '0', '0', '0'),
+(267, 5, 29, '1', '0', '0', '0'),
+(268, 6, 29, '1', '0', '0', '0'),
+(269, 7, 29, '1', '0', '0', '0'),
+(270, 8, 29, '1', '0', '0', '0'),
+(271, 9, 29, '1', '0', '0', '0'),
+(272, 10, 29, '1', '0', '0', '0'),
+(273, 11, 29, '1', '0', '0', '0'),
+(274, 12, 29, '1', '0', '0', '0'),
+(275, 13, 29, '1', '0', '0', '0'),
+(276, 14, 29, '1', '0', '0', '0'),
+(277, 15, 29, '1', '0', '0', '0'),
+(278, 16, 29, '1', '0', '0', '0'),
+(279, 17, 29, '1', '0', '0', '0'),
+(280, 18, 29, '1', '0', '0', '0'),
+(281, 19, 29, '1', '0', '0', '0'),
+(282, 20, 29, '1', '0', '0', '0'),
+(283, 21, 29, '1', '0', '0', '0'),
+(284, 22, 29, '1', '0', '0', '0'),
+(285, 23, 29, '1', '0', '0', '0'),
+(286, 24, 29, '1', '0', '0', '0'),
+(287, 25, 29, '1', '0', '0', '0'),
+(288, 26, 29, '1', '0', '0', '0'),
+(289, 27, 29, '1', '0', '0', '0'),
+(290, 28, 29, '1', '0', '0', '0'),
+(291, 29, 29, '1', '0', '0', '0'),
+(292, 30, 29, '1', '0', '0', '0'),
+(293, 31, 29, '1', '0', '0', '0'),
+(294, 32, 29, '1', '0', '0', '0'),
+(295, 33, 29, '1', '0', '0', '0'),
+(296, 34, 29, '1', '0', '0', '0'),
+(297, 35, 29, '1', '0', '0', '0'),
+(298, 36, 29, '1', '0', '0', '0'),
+(299, 37, 29, '1', '0', '0', '0'),
+(300, 38, 29, '1', '0', '0', '0'),
+(301, 39, 29, '1', '0', '0', '0'),
+(302, 40, 29, '1', '0', '0', '0'),
+(303, 41, 29, '1', '0', '0', '0'),
+(304, 1, 30, '1', '0', '0', '0'),
+(305, 2, 30, '1', '0', '0', '0'),
+(306, 3, 30, '1', '0', '0', '0'),
+(307, 4, 30, '1', '0', '0', '0'),
+(308, 5, 30, '1', '0', '0', '0'),
+(309, 6, 30, '1', '0', '0', '0'),
+(310, 7, 30, '1', '0', '0', '0'),
+(311, 8, 30, '1', '0', '0', '0'),
+(312, 9, 30, '1', '0', '0', '0'),
+(313, 10, 30, '1', '0', '0', '0'),
+(314, 11, 30, '1', '0', '0', '0'),
+(315, 12, 30, '1', '0', '0', '0'),
+(316, 13, 30, '1', '0', '0', '0'),
+(317, 14, 30, '1', '0', '0', '0'),
+(318, 15, 30, '1', '0', '0', '0'),
+(319, 16, 30, '1', '0', '0', '0'),
+(320, 17, 30, '1', '0', '0', '0'),
+(321, 18, 30, '1', '0', '0', '0'),
+(322, 19, 30, '1', '0', '0', '0'),
+(323, 20, 30, '1', '0', '0', '0'),
+(324, 21, 30, '1', '0', '0', '0'),
+(325, 22, 30, '1', '0', '0', '0'),
+(326, 23, 30, '1', '0', '0', '0'),
+(327, 24, 30, '1', '0', '0', '0'),
+(328, 25, 30, '1', '0', '0', '0'),
+(329, 26, 30, '1', '0', '0', '0'),
+(330, 27, 30, '1', '0', '0', '0'),
+(331, 28, 30, '1', '0', '0', '0'),
+(332, 29, 30, '1', '0', '0', '0'),
+(333, 30, 30, '1', '0', '0', '0'),
+(334, 31, 30, '1', '0', '0', '0'),
+(335, 32, 30, '1', '0', '0', '0'),
+(336, 33, 30, '1', '0', '0', '0'),
+(337, 34, 30, '1', '0', '0', '0'),
+(338, 35, 30, '1', '0', '0', '0'),
+(339, 36, 30, '1', '0', '0', '0'),
+(340, 37, 30, '1', '0', '0', '0'),
+(341, 38, 30, '1', '0', '0', '0'),
+(342, 39, 30, '1', '0', '0', '0'),
+(343, 40, 30, '1', '0', '0', '0'),
+(344, 41, 30, '1', '0', '0', '0'),
+(345, 1, 31, '1', '0', '0', '0'),
+(346, 2, 31, '1', '0', '0', '0'),
+(347, 3, 31, '1', '0', '0', '0'),
+(348, 4, 31, '1', '0', '0', '0'),
+(349, 5, 31, '1', '0', '0', '0'),
+(350, 6, 31, '1', '0', '0', '0'),
+(351, 7, 31, '1', '0', '0', '0'),
+(352, 8, 31, '1', '0', '0', '0'),
+(353, 9, 31, '1', '0', '0', '0'),
+(354, 10, 31, '1', '0', '0', '0'),
+(355, 11, 31, '1', '0', '0', '0'),
+(356, 12, 31, '1', '0', '0', '0'),
+(357, 13, 31, '1', '0', '0', '0'),
+(358, 14, 31, '1', '0', '0', '0'),
+(359, 15, 31, '1', '0', '0', '0'),
+(360, 16, 31, '1', '0', '0', '0'),
+(361, 17, 31, '1', '0', '0', '0'),
+(362, 18, 31, '1', '0', '0', '0'),
+(363, 19, 31, '1', '0', '0', '0'),
+(364, 20, 31, '1', '0', '0', '0'),
+(365, 21, 31, '1', '0', '0', '0'),
+(366, 22, 31, '1', '0', '0', '0'),
+(367, 23, 31, '1', '0', '0', '0'),
+(368, 24, 31, '1', '0', '0', '0'),
+(369, 25, 31, '1', '0', '0', '0'),
+(370, 26, 31, '1', '0', '0', '0'),
+(371, 27, 31, '1', '0', '0', '0'),
+(372, 28, 31, '1', '0', '0', '0'),
+(373, 29, 31, '1', '0', '0', '0'),
+(374, 30, 31, '1', '0', '0', '0'),
+(375, 31, 31, '1', '0', '0', '0'),
+(376, 32, 31, '1', '0', '0', '0'),
+(377, 33, 31, '1', '0', '0', '0'),
+(378, 34, 31, '1', '0', '0', '0'),
+(379, 35, 31, '1', '0', '0', '0'),
+(380, 36, 31, '1', '0', '0', '0'),
+(381, 37, 31, '1', '0', '0', '0'),
+(382, 38, 31, '1', '0', '0', '0'),
+(383, 39, 31, '1', '0', '0', '0'),
+(384, 40, 31, '1', '0', '0', '0'),
+(385, 41, 31, '1', '0', '0', '0');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_barang`
+-- Table structure for table `tb_barang`
 --
 
 CREATE TABLE `tb_barang` (
@@ -96,17 +262,62 @@ CREATE TABLE `tb_barang` (
   `id_cabang` int(11) NOT NULL,
   `id_satuan` int(11) NOT NULL,
   `id_kategori` int(11) NOT NULL,
-  `merk` int(11) NOT NULL,
-  `hargabeli` int(11) NOT NULL,
-  `ukuran` varchar(30) NOT NULL,
   `id_warna` int(11) NOT NULL,
-  `id_user` int(11) NOT NULL
+  `ukuran` varchar(30) NOT NULL,
+  `merk` varchar(20) NOT NULL,
+  `stok` int(11) NOT NULL,
+  `stokmin` int(11) NOT NULL,
+  `hargabeli` int(11) NOT NULL,
+  `id_user` int(11) NOT NULL,
+  `tglupdate` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tb_barang`
+--
+
+INSERT INTO `tb_barang` (`id_barang`, `barang`, `barcode`, `expaid`, `id_gudang`, `id_cabang`, `id_satuan`, `id_kategori`, `id_warna`, `ukuran`, `merk`, `stok`, `stokmin`, `hargabeli`, `id_user`, `tglupdate`) VALUES
+(6, 'Sabun Colek', 20201, '2020-08-30', 3, 2, 21, 5, 1, '26', 'Wings Surya', 10, 1, 25000, 1, '2020-08-30'),
+(7, 'Sabun Colek', 216, '2020-09-02', 3, 2, 23, 5, 3, '26', 'Wings Surya', 10, 1, 5000, 1, '2020-09-02');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_cabang`
+-- Table structure for table `tb_baranggaram`
+--
+
+CREATE TABLE `tb_baranggaram` (
+  `id_barang` int(11) NOT NULL,
+  `barang` varchar(100) NOT NULL,
+  `barcode` int(11) NOT NULL,
+  `expaid` date NOT NULL,
+  `id_gudang` int(11) NOT NULL,
+  `id_cabang` int(11) NOT NULL,
+  `id_satuan` int(11) NOT NULL,
+  `id_kategori` int(11) NOT NULL,
+  `id_warna` int(11) NOT NULL,
+  `merk` varchar(20) NOT NULL,
+  `hargabeli` int(11) NOT NULL,
+  `stok` int(11) NOT NULL,
+  `stokmin` int(11) NOT NULL,
+  `id_konversi` int(11) NOT NULL,
+  `hasil_konversi` int(11) NOT NULL,
+  `id_user` int(11) NOT NULL,
+  `tglupdate` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tb_baranggaram`
+--
+
+INSERT INTO `tb_baranggaram` (`id_barang`, `barang`, `barcode`, `expaid`, `id_gudang`, `id_cabang`, `id_satuan`, `id_kategori`, `id_warna`, `merk`, `hargabeli`, `stok`, `stokmin`, `id_konversi`, `hasil_konversi`, `id_user`, `tglupdate`) VALUES
+(1, 'Soklin Pemutih', 20120, '2020-08-30', 3, 2, 21, 6, 7, 'Wings Surya', 17800, 100, 6, 4, 200000, 1, '2020-08-30'),
+(2, 'Sabun Colek', 2012012, '2020-08-30', 1, 1, 21, 5, 1, 'Wings Surya', 5000, 200, 10, 4, 400000, 1, '2020-08-30');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_cabang`
 --
 
 CREATE TABLE `tb_cabang` (
@@ -124,7 +335,7 @@ CREATE TABLE `tb_cabang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `tb_cabang`
+-- Dumping data for table `tb_cabang`
 --
 
 INSERT INTO `tb_cabang` (`id_cabang`, `namacabang`, `id_gudang`, `id_kota`, `id_kecamatan`, `id_provinsi`, `alamat`, `tlf`, `email`, `user`, `tglupdate`) VALUES
@@ -134,7 +345,7 @@ INSERT INTO `tb_cabang` (`id_cabang`, `namacabang`, `id_gudang`, `id_kota`, `id_
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_dtlbeli`
+-- Table structure for table `tb_dtlbeli`
 --
 
 CREATE TABLE `tb_dtlbeli` (
@@ -150,7 +361,7 @@ CREATE TABLE `tb_dtlbeli` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_dtljual`
+-- Table structure for table `tb_dtljual`
 --
 
 CREATE TABLE `tb_dtljual` (
@@ -166,7 +377,7 @@ CREATE TABLE `tb_dtljual` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_dtlretubeli`
+-- Table structure for table `tb_dtlretubeli`
 --
 
 CREATE TABLE `tb_dtlretubeli` (
@@ -180,7 +391,7 @@ CREATE TABLE `tb_dtlretubeli` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_dtlreturjual`
+-- Table structure for table `tb_dtlreturjual`
 --
 
 CREATE TABLE `tb_dtlreturjual` (
@@ -194,7 +405,7 @@ CREATE TABLE `tb_dtlreturjual` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_gudang`
+-- Table structure for table `tb_gudang`
 --
 
 CREATE TABLE `tb_gudang` (
@@ -211,31 +422,69 @@ CREATE TABLE `tb_gudang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `tb_gudang`
+-- Dumping data for table `tb_gudang`
 --
 
 INSERT INTO `tb_gudang` (`id_gudang`, `gudang`, `alamat`, `tlf`, `email`, `id_kota`, `id_kecamatan`, `id_provinsi`, `id_user`, `tglupdate`) VALUES
 (1, 'pusat', 'brebes', '1232112', 'ad@ads', '3329', '3329170', '33', 1, '2020-08-20'),
-(3, 'gudang a', '', '', '', '3171', '3171050', '31', 1, '2020-08-22');
+(3, 'gudang a', '', '', '', '3171', '3171050', '31', 1, '2020-08-22'),
+(4, 'Gudang Surabaya', 'qwert', '081330181664', 'hijriyah@mail.com', '3604', '3604210', '36', 1, '2020-08-23'),
+(5, 'Gudang Surabaya Utara', 'afnv', '081330181664', 'AS@gmail.com', '5106', '5106020', '51', 1, '2020-08-24');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_harga`
+-- Table structure for table `tb_harga`
 --
 
 CREATE TABLE `tb_harga` (
   `id_harga` int(11) NOT NULL,
   `id_barang` int(11) NOT NULL,
   `harga` int(11) NOT NULL,
+  `minqtt` int(11) NOT NULL,
   `id_user` int(11) NOT NULL,
   `tglupdate` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `tb_harga`
+--
+
+INSERT INTO `tb_harga` (`id_harga`, `id_barang`, `harga`, `minqtt`, `id_user`, `tglupdate`) VALUES
+(2, 4, 200000, 20, 1, '2020-08-30'),
+(3, 2, 100000, 2, 1, '2020-08-30'),
+(4, 4, 60000, 6, 1, '2020-08-30'),
+(5, 6, 100000, 223, 1, '2020-09-01'),
+(6, 6, 2000000, 20, 1, '2020-09-03');
+
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_invoicejual`
+-- Table structure for table `tb_hargagaram`
+--
+
+CREATE TABLE `tb_hargagaram` (
+  `id_harga` int(11) NOT NULL,
+  `id_barang` int(11) NOT NULL,
+  `harga` int(11) NOT NULL,
+  `minqtt` int(11) NOT NULL,
+  `id_user` int(11) NOT NULL,
+  `tglupdate` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tb_hargagaram`
+--
+
+INSERT INTO `tb_hargagaram` (`id_harga`, `id_barang`, `harga`, `minqtt`, `id_user`, `tglupdate`) VALUES
+(1, 1, 200000, 20, 1, '2020-08-30'),
+(2, 2, 5000000, 100, 1, '2020-08-30'),
+(3, 2, 100000, 20, 1, '2020-09-03');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_invoicejual`
 --
 
 CREATE TABLE `tb_invoicejual` (
@@ -252,20 +501,29 @@ CREATE TABLE `tb_invoicejual` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_kategori`
+-- Table structure for table `tb_kategori`
 --
 
 CREATE TABLE `tb_kategori` (
   `id_kategori` int(11) NOT NULL,
-  `kategori` int(100) NOT NULL,
+  `kategori` varchar(100) NOT NULL,
   `id_user` int(11) NOT NULL,
   `tglupdate` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `tb_kategori`
+--
+
+INSERT INTO `tb_kategori` (`id_kategori`, `kategori`, `id_user`, `tglupdate`) VALUES
+(5, 'Sabun', 1, '2020-08-29'),
+(6, 'Soklin', 1, '2020-08-30'),
+(7, 'Sabun Cair', 1, '2020-08-30');
+
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_kecamatan`
+-- Table structure for table `tb_kecamatan`
 --
 
 CREATE TABLE `tb_kecamatan` (
@@ -275,7 +533,7 @@ CREATE TABLE `tb_kecamatan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `tb_kecamatan`
+-- Dumping data for table `tb_kecamatan`
 --
 
 INSERT INTO `tb_kecamatan` (`id_kecamatan`, `id_kota`, `kecamatan`) VALUES
@@ -7380,7 +7638,7 @@ INSERT INTO `tb_kecamatan` (`id_kecamatan`, `id_kota`, `kecamatan`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_kode`
+-- Table structure for table `tb_kode`
 --
 
 CREATE TABLE `tb_kode` (
@@ -7390,35 +7648,44 @@ CREATE TABLE `tb_kode` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `tb_kode`
+-- Dumping data for table `tb_kode`
 --
 
 INSERT INTO `tb_kode` (`id_kode`, `modultransaksi`, `kodefinal`) VALUES
 (12, 'staf', 'username-ST-tanggal-no'),
 (13, 'sales', 'username-M-tanggal-no'),
-(14, 'suplier', 'username-SU-tanggal-no');
+(14, 'suplier', 'username-SU-tanggal-no'),
+(15, 'pelanggan', 'username-PL-tanggal-no'),
+(16, 'voucher', 'username-VC-tanggal-no');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_konversi`
+-- Table structure for table `tb_konversi`
 --
 
 CREATE TABLE `tb_konversi` (
   `id_konversi` int(11) NOT NULL,
-  `satuanawal` int(11) NOT NULL,
-  `id_barang` int(11) NOT NULL,
+  `id_satuan` int(11) NOT NULL,
   `qttawal` int(11) NOT NULL,
-  `satuanakhir` int(11) NOT NULL,
+  `satuan` int(11) NOT NULL,
   `qttkonversi` int(11) NOT NULL,
   `tgl_update` date NOT NULL,
   `id_user` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `tb_konversi`
+--
+
+INSERT INTO `tb_konversi` (`id_konversi`, `id_satuan`, `qttawal`, `satuan`, `qttkonversi`, `tgl_update`, `id_user`) VALUES
+(4, 21, 2, 23, 2000, '2020-08-30', 1),
+(6, 27, 1, 23, 1000, '2020-09-03', 1);
+
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_kota`
+-- Table structure for table `tb_kota`
 --
 
 CREATE TABLE `tb_kota` (
@@ -7428,7 +7695,7 @@ CREATE TABLE `tb_kota` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `tb_kota`
+-- Dumping data for table `tb_kota`
 --
 
 INSERT INTO `tb_kota` (`id_kota`, `id_provinsi`, `name_kota`) VALUES
@@ -7950,7 +8217,7 @@ INSERT INTO `tb_kota` (`id_kota`, `id_provinsi`, `name_kota`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_menu`
+-- Table structure for table `tb_menu`
 --
 
 CREATE TABLE `tb_menu` (
@@ -7961,7 +8228,7 @@ CREATE TABLE `tb_menu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `tb_menu`
+-- Dumping data for table `tb_menu`
 --
 
 INSERT INTO `tb_menu` (`id_menu`, `menu`, `icon`, `urutan`) VALUES
@@ -7977,26 +8244,36 @@ INSERT INTO `tb_menu` (`id_menu`, `menu`, `icon`, `urutan`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_pelanggan`
+-- Table structure for table `tb_pelanggan`
 --
 
 CREATE TABLE `tb_pelanggan` (
   `id_pelanggan` int(11) NOT NULL,
   `nama` varchar(100) NOT NULL,
-  `nopelanggan` varchar(20) NOT NULL,
-  `alamat` varchar(200) NOT NULL,
+  `nopelanggan` varchar(50) NOT NULL,
   `id_provinsi` char(4) NOT NULL,
   `id_kota` char(4) NOT NULL,
+  `id_kecamatan` char(7) NOT NULL,
+  `alamat` varchar(200) NOT NULL,
   `tlp` char(12) NOT NULL,
   `limit` int(11) NOT NULL,
   `tgl_update` date DEFAULT NULL,
   `id_user` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `tb_pelanggan`
+--
+
+INSERT INTO `tb_pelanggan` (`id_pelanggan`, `nama`, `nopelanggan`, `id_provinsi`, `id_kota`, `id_kecamatan`, `alamat`, `tlp`, `limit`, `tgl_update`, `id_user`) VALUES
+(11, 'Mifta', 'administrator-PL-02092020-1', '11', '1112', '1112060', 'sumput', '098098098098', 5000000, '2020-09-02', 1),
+(12, 'rani', 'administrator-PL-02092020-2', '51', '5106', '5106040', 'driyorejo', '081224334445', 200000, '2020-09-02', 1),
+(13, 'RIZKY FEBRIANTO', 'administrator-PL-03092020-3', '51', '5106', '5106040', 'driyorejo', '098098098098', 3000000, '2020-09-03', 1);
+
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_pembelian`
+-- Table structure for table `tb_pembelian`
 --
 
 CREATE TABLE `tb_pembelian` (
@@ -8022,7 +8299,7 @@ CREATE TABLE `tb_pembelian` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_penjualan`
+-- Table structure for table `tb_penjualan`
 --
 
 CREATE TABLE `tb_penjualan` (
@@ -8041,7 +8318,7 @@ CREATE TABLE `tb_penjualan` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_provinsi`
+-- Table structure for table `tb_provinsi`
 --
 
 CREATE TABLE `tb_provinsi` (
@@ -8050,7 +8327,7 @@ CREATE TABLE `tb_provinsi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `tb_provinsi`
+-- Dumping data for table `tb_provinsi`
 --
 
 INSERT INTO `tb_provinsi` (`id_provinsi`, `name_prov`) VALUES
@@ -8092,7 +8369,7 @@ INSERT INTO `tb_provinsi` (`id_provinsi`, `name_prov`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_returbeli`
+-- Table structure for table `tb_returbeli`
 --
 
 CREATE TABLE `tb_returbeli` (
@@ -8108,7 +8385,7 @@ CREATE TABLE `tb_returbeli` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_returjual`
+-- Table structure for table `tb_returjual`
 --
 
 CREATE TABLE `tb_returjual` (
@@ -8123,7 +8400,7 @@ CREATE TABLE `tb_returjual` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_sales`
+-- Table structure for table `tb_sales`
 --
 
 CREATE TABLE `tb_sales` (
@@ -8143,16 +8420,16 @@ CREATE TABLE `tb_sales` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `tb_sales`
+-- Dumping data for table `tb_sales`
 --
 
 INSERT INTO `tb_sales` (`id_sales`, `nopegawai`, `id_tipeuser`, `namasales`, `alamat`, `id_provinsi`, `id_kota`, `id_kecamatan`, `tlp`, `jabatan`, `id_cabang`, `id_user`, `tglupdate`) VALUES
-(1, 'administrator-M-2208', 14, 'alief', 'asddsad', '51', '5108', '5108080', '122222222222', 'dsad', 1, 1, '2020-08-22');
+(1, 'administrator-M-2208', 14, 'alief', 'asddsadadada', '51', '5108', '5108080', '122222222222', 'dsad', 1, 1, '2020-09-02');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_satuan`
+-- Table structure for table `tb_satuan`
 --
 
 CREATE TABLE `tb_satuan` (
@@ -8162,10 +8439,20 @@ CREATE TABLE `tb_satuan` (
   `id_user` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `tb_satuan`
+--
+
+INSERT INTO `tb_satuan` (`id_satuan`, `satuan`, `tgl_update`, `id_user`) VALUES
+(21, 'kg', '2020-08-30', 1),
+(23, 'gram', '2020-08-30', 1),
+(25, 'dgram', '2020-08-30', 1),
+(27, 'ons', '2020-08-30', 1);
+
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_sjpenjualan`
+-- Table structure for table `tb_sjpenjualan`
 --
 
 CREATE TABLE `tb_sjpenjualan` (
@@ -8178,7 +8465,7 @@ CREATE TABLE `tb_sjpenjualan` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_staf`
+-- Table structure for table `tb_staf`
 --
 
 CREATE TABLE `tb_staf` (
@@ -8200,18 +8487,19 @@ CREATE TABLE `tb_staf` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `tb_staf`
+-- Dumping data for table `tb_staf`
 --
 
 INSERT INTO `tb_staf` (`id_user`, `id_tipeuser`, `nopegawai`, `nama`, `alamat`, `id_kecamatan`, `id_kota`, `id_provinsi`, `tlp`, `jabatan`, `username`, `password`, `id_cabang`, `id_userupdate`, `tglupdate`) VALUES
 (1, 1, '1', 'administrator', 'baliasd', '5107040', '5107', '51', '12345678', 'administrator', 'admin', 'admin', 1, 1, '2020-08-22'),
 (4, 14, 'administrator-ST-22082020-2', 'rizky', 'asd asdasd', '3672030', '3672', '36', '122222222222', 'dsad', 'rizky', 'sad', 1, 0, '2020-08-22'),
-(5, 14, 'administrator-ST-22082020-3', 'alief', 'sd', '5106010', '5106', '51', '122222222222', 'dsad', 'alief', 'alief', 1, 0, '2020-08-22');
+(5, 14, 'administrator-ST-22082020-3', 'alief', 'sd', '5106010', '5106', '51', '122222222222', 'dsad', 'alief', 'alief', 1, 0, '2020-08-22'),
+(6, 28, 'administrator-ST-03092020-2', 'asd', 'a', '3601090', '3601', '36', '131', 'asd', 'asd', 'asd', 2, 0, '2020-09-03');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_stok`
+-- Table structure for table `tb_stok`
 --
 
 CREATE TABLE `tb_stok` (
@@ -8230,7 +8518,7 @@ CREATE TABLE `tb_stok` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_stokopname`
+-- Table structure for table `tb_stokopname`
 --
 
 CREATE TABLE `tb_stokopname` (
@@ -8250,7 +8538,7 @@ CREATE TABLE `tb_stokopname` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_submenu`
+-- Table structure for table `tb_submenu`
 --
 
 CREATE TABLE `tb_submenu` (
@@ -8262,54 +8550,56 @@ CREATE TABLE `tb_submenu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `tb_submenu`
+-- Dumping data for table `tb_submenu`
 --
 
 INSERT INTO `tb_submenu` (`id_submenu`, `id_menus`, `submenu`, `linksubmenu`, `statusmenu`) VALUES
 (1, 1, ' Data Staf', 'C_User', 'aktif'),
 (2, 1, 'Data Tipe User', 'C_User/tipeuser', 'aktif'),
 (3, 1, 'Data Konversi', 'C_konversi', 'aktif'),
-(4, 1, 'Data Kategori', 'C_kategori', 'aktif'),
-(5, 1, 'Data Satuan', 'C_satuan', 'aktif'),
-(6, 5, 'Laporan Kas', 'C_Kas/laporan', 'aktif'),
-(7, 1, 'Data Barang', 'C_barang', 'aktif'),
-(8, 1, 'Data Pelanggan', 'C_Pelanggan', 'aktif'),
+(4, 1, 'Data Kategori', 'C_kategori', 'tidak'),
+(5, 1, 'Data Satuan', 'C_satuan', 'tidak'),
+(6, 5, 'Laporan Kas', 'C_Kas/laporan', 'tidak'),
+(7, 1, 'Data Barang', 'C_barang', 'tidak'),
+(8, 1, 'Data Pelanggan', 'C_pelanggan', 'aktif'),
 (9, 1, 'Data Suplier', 'C_Suplier', 'aktif'),
-(10, 2, 'Pre Order', '', 'aktif'),
-(11, 2, 'Surat Jalan', '', 'aktif'),
-(12, 5, 'Laporan Piutang', 'C_penjualan/piutang', 'aktif'),
-(13, 2, 'Invoice', '', 'aktif'),
-(14, 3, 'Pre Order', 'C_Pembelian', 'aktif'),
-(15, 5, 'Laporan Hutang', 'C_Pembelian/lhutang', 'aktif'),
-(16, 5, 'Laporan Pembelian', 'C_Pembelian/laporan', 'aktif'),
-(17, 5, 'Laporan Penjualan', 'C_penjualan/laporan', 'aktif'),
-(18, 4, 'Stock ', 'C_Stok', 'aktif'),
-(19, 4, 'Mutasi Barang', 'C_mutasibarang', 'aktif'),
-(20, 6, 'Kas Masuk', '', 'aktif'),
-(21, 6, 'Kas Keluar', '', 'aktif'),
-(22, 6, 'Bonus Sales', '', 'aktif'),
-(23, 6, 'Laba Rugi', 'C_labarugi', 'aktif'),
+(10, 2, 'Pre Order', '', 'tidak'),
+(11, 2, 'Surat Jalan', '', 'tidak'),
+(12, 5, 'Laporan Piutang', 'C_penjualan/piutang', 'tidak'),
+(13, 2, 'Invoice', '', 'tidak'),
+(14, 3, 'Pre Order', 'C_Pembelian', 'tidak'),
+(15, 5, 'Laporan Hutang', 'C_Pembelian/lhutang', 'tidak'),
+(16, 5, 'Laporan Pembelian', 'C_Pembelian/laporan', 'tidak'),
+(17, 5, 'Laporan Penjualan', 'C_penjualan/laporan', 'tidak'),
+(18, 4, 'Stock ', 'C_Stok', 'tidak'),
+(19, 4, 'Mutasi Barang', 'C_mutasibarang', 'tidak'),
+(20, 6, 'Kas Masuk', '', 'tidak'),
+(21, 6, 'Kas Keluar', '', 'tidak'),
+(22, 6, 'Bonus Sales', '', 'tidak'),
+(23, 6, 'Laba Rugi', 'C_labarugi', 'tidak'),
 (24, 7, 'Hak Akses Login', 'C_Setting', 'aktif'),
 (25, 7, 'Data Kode', 'C_Setting/vkode', 'aktif'),
-(26, 3, 'Surat Jalan', '', 'aktif'),
-(27, 4, 'Stock Opname', 'C_Stok/so', 'aktif'),
-(28, 1, 'Data Harga', 'C_harga', 'aktif'),
-(29, 4, 'Stok Retur', 'C_Stok/retur', 'aktif'),
-(30, 8, 'Absensi', '', 'aktif'),
-(31, 7, 'User Log', 'C_User/userlog', 'aktif'),
+(26, 3, 'Surat Jalan', '', 'tidak'),
+(27, 4, 'Stock Opname', 'C_Stok/so', 'tidak'),
+(28, 1, 'Data Harga', 'C_harga', 'tidak'),
+(29, 4, 'Stok Retur', 'C_Stok/retur', 'tidak'),
+(30, 8, 'Absensi', '', 'tidak'),
+(31, 7, 'User Log', 'C_User/userlog', 'tidak'),
 (32, 1, 'Data Cabang', 'C_cabang', 'aktif'),
 (33, 1, 'Data Sales', 'C_Sales', 'aktif'),
-(34, 1, 'Data Warna', 'C_warna', 'aktif'),
+(34, 1, 'Data Warna', 'C_warna', 'tidak'),
 (35, 1, 'Data Voucher', 'C_voucher', 'aktif'),
-(36, 3, 'Invoice', '', 'aktif'),
-(37, 3, 'Retur Pembelian', '', 'aktif'),
-(38, 2, 'Retur Penjualan', '', 'aktif'),
-(39, 1, 'Data Gudang', 'C_gudang', 'aktif');
+(36, 3, 'Invoice', '', 'tidak'),
+(37, 3, 'Retur Pembelian', '', 'tidak'),
+(38, 2, 'Retur Penjualan', '', 'tidak'),
+(39, 1, 'Data Gudang', 'C_gudang', 'aktif'),
+(40, 1, 'Data Barang Garam', 'C_baranggaram', 'aktif'),
+(41, 1, 'Data Harga Garam', 'C_hargagaram', 'aktif');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_suplier`
+-- Table structure for table `tb_suplier`
 --
 
 CREATE TABLE `tb_suplier` (
@@ -8326,10 +8616,18 @@ CREATE TABLE `tb_suplier` (
   `limit` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `tb_suplier`
+--
+
+INSERT INTO `tb_suplier` (`id_suplier`, `nama_suplier`, `nosuplier`, `alamat`, `id_kota`, `id_provinsi`, `tlp`, `tgl_update`, `nama_toko`, `id_user`, `limit`) VALUES
+(1, 'Mifta', 'admin-SU-23082020-1', 'dfdsdsf', '1112', '11', '098098098098', '2020-09-02', 'Toko Eka Jaya', 1, 2000000),
+(2, 'Mifta', 'administrator-SU-29082020-2', 'asas', '1701', '17', '098098098098', '2020-08-29', 'Toko Eka Jaya', 1, 3000000);
+
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_tipeuser`
+-- Table structure for table `tb_tipeuser`
 --
 
 CREATE TABLE `tb_tipeuser` (
@@ -8338,19 +8636,19 @@ CREATE TABLE `tb_tipeuser` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `tb_tipeuser`
+-- Dumping data for table `tb_tipeuser`
 --
 
 INSERT INTO `tb_tipeuser` (`id_tipeuser`, `tipeuser`) VALUES
 (1, 'administrator'),
-(14, 'marketing'),
 (20, 'admin'),
-(22, 'gudang');
+(28, 'gudang'),
+(29, 'marketing');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_userlog`
+-- Table structure for table `tb_userlog`
 --
 
 CREATE TABLE `tb_userlog` (
@@ -8362,58 +8660,70 @@ CREATE TABLE `tb_userlog` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `tb_userlog`
+-- Dumping data for table `tb_userlog`
 --
 
 INSERT INTO `tb_userlog` (`id_userlog`, `id_user`, `waktu`, `id_submenu`, `ket`) VALUES
-(26, 1, '2020-08-22 05:42:05', 2, 'edit tipe user'),
-(27, 1, '2020-08-22 05:42:18', 2, 'edit tipe user'),
-(28, 1, '2020-08-22 17:42:29', 0, 'Logout'),
-(29, 1, '2020-08-22 17:42:39', 0, 'Login'),
-(30, 1, '2020-08-22 17:43:23', 0, 'Login'),
-(31, 8, '2020-08-22 19:25:48', 0, 'Logout'),
-(32, 1, '2020-08-22 19:25:54', 0, 'Login'),
-(33, 1, '2020-08-22 07:53:13', 2, 'tambah data tipe user'),
-(34, 1, '2020-08-22 20:11:46', 0, 'Login'),
-(35, 1, '2020-08-22 20:24:07', 0, 'Login'),
-(36, 1, '2020-08-22 20:40:04', 0, 'Logout'),
-(37, 1, '2020-08-22 20:40:08', 0, 'Login'),
-(38, 1, '2020-08-22 20:45:18', 0, 'Logout'),
-(39, 1, '2020-08-22 20:45:21', 0, 'Login'),
-(40, 1, '2020-08-22 20:45:40', 0, 'Logout'),
-(41, 1, '2020-08-22 20:45:44', 0, 'Login'),
-(42, 1, '2020-08-22 09:05:43', 9, 'hapus data suplier 1'),
-(43, 8, '2020-08-22 21:18:12', 0, 'Logout'),
-(44, 1, '2020-08-22 21:18:16', 0, 'Login'),
-(45, 1, '2020-08-22 21:18:39', 0, 'Login'),
-(46, 1, '2020-08-22 21:20:15', 0, 'Login'),
-(47, 1, '2020-08-22 21:25:58', 0, 'Logout'),
-(48, 1, '2020-08-22 21:26:02', 0, 'Login'),
-(49, 8, '2020-08-22 09:42:02', 39, 'edit data gudang'),
-(50, 8, '2020-08-22 09:42:48', 39, 'edit data gudang'),
-(51, 2, '2020-08-22 09:42:49', 39, 'hapus data gudang'),
-(52, 8, '2020-08-22 22:15:58', 0, 'Logout'),
-(53, 1, '2020-08-22 22:16:02', 0, 'Login'),
-(54, 1, '2020-08-22 11:11:01', 39, 'tambah data gudang'),
-(55, 1, '2020-08-22 11:12:36', 32, 'tambah data cabang'),
-(56, 1, '2020-08-22 11:12:50', 32, 'edit data cabang'),
-(57, 1, '2020-08-22 11:13:41', 32, 'edit data cabang'),
-(58, 1, '2020-08-22 11:13:56', 32, 'tambah data cabang'),
-(59, 1, '2020-08-22 11:16:50', 32, 'edit data cabang'),
-(60, 1, '2020-08-22 11:16:55', 32, 'edit data cabang'),
-(61, 1, '2020-08-22 11:17:15', 32, 'edit data cabang'),
-(62, 1, '2020-08-22 11:22:40', 32, 'edit data cabang'),
-(63, 3, '2020-08-22 11:22:43', 32, 'hapus data cabang3');
+(333, 1, '2020-09-03 12:46:50', 0, 'Login'),
+(334, 1, '2020-09-03 12:49:57', 8, 'tambah data pelanggan'),
+(335, 1, '2020-09-03 12:51:43', 34, 'tambah data warna'),
+(336, 1, '2020-09-03 01:09:19', 41, 'tambah data harga'),
+(337, 1, '2020-09-03 01:09:35', 41, 'edit data harga'),
+(338, 1, '2020-09-03 01:09:46', 41, 'edit data harga'),
+(339, 1, '2020-09-03 01:10:53', 28, 'tambah data harga'),
+(340, 1, '2020-09-03 01:11:01', 28, 'edit data harga'),
+(341, 1, '2020-09-03 01:11:10', 28, 'edit data harga'),
+(342, 1, '2020-09-03 01:15:36', 28, 'edit data harga'),
+(343, 1, '2020-09-03 01:19:29', 28, 'edit data harga'),
+(344, 1, '2020-09-03 01:24:40', 28, 'edit data harga'),
+(345, 1, '2020-09-03 01:24:51', 28, 'edit data harga'),
+(346, 1, '2020-09-03 13:26:01', 0, 'Login'),
+(347, 1, '2020-09-03 01:26:12', 28, 'edit data harga'),
+(348, 1, '2020-09-03 01:26:33', 3, 'edit data konversi'),
+(349, 1, '2020-09-03 01:42:34', 28, 'edit data harga'),
+(350, 1, '2020-09-03 05:27:08', 2, 'hapus tipe user 14'),
+(351, 1, '2020-09-03 05:27:13', 1, 'tambah data tipe user'),
+(352, 1, '2020-09-03 05:29:50', 1, 'tambah data tipe user'),
+(353, 1, '2020-09-03 05:31:11', 2, 'tambah data tipe user'),
+(354, 1, '2020-09-03 05:32:04', 2, 'hapus tipe user 25'),
+(355, 1, '2020-09-03 05:32:08', 2, 'hapus tipe user 24'),
+(356, 1, '2020-09-03 05:32:12', 2, 'tambah data tipe user'),
+(357, 1, '2020-09-03 05:32:25', 2, 'tambah data tipe user'),
+(358, 1, '2020-09-03 05:36:45', 2, 'hapus tipe user 27'),
+(359, 1, '2020-09-03 05:36:48', 2, 'hapus tipe user 26'),
+(360, 1, '2020-09-03 05:39:00', 2, 'hapus tipe user 23'),
+(361, 1, '2020-09-03 05:39:03', 2, 'hapus tipe user 22'),
+(362, 1, '2020-09-03 05:39:10', 2, 'tambah data tipe user'),
+(363, 1, '2020-09-03 05:39:17', 2, 'tambah data tipe user'),
+(364, 1, '2020-09-03 05:40:38', 2, 'tambah data tipe user'),
+(365, 1, '2020-09-03 05:40:40', 2, 'tambah data tipe user'),
+(366, 1, '2020-09-03 05:40:49', 2, 'hapus tipe user 30'),
+(367, 1, '2020-09-03 05:40:52', 2, 'hapus tipe user 31'),
+(368, 1, '2020-09-03 05:41:27', 1, 'tambah data staf'),
+(369, 1, '2020-09-03 17:41:30', 0, 'Logout'),
+(370, 6, '2020-09-03 17:41:34', 0, 'Login'),
+(371, 6, '2020-09-03 17:41:47', 0, 'Logout'),
+(372, 1, '2020-09-03 17:41:51', 0, 'Login'),
+(373, 1, '2020-09-03 17:42:06', 0, 'Logout'),
+(374, 6, '2020-09-03 17:42:10', 0, 'Login'),
+(375, 6, '2020-09-03 17:43:22', 0, 'Logout'),
+(376, 1, '2020-09-03 18:39:30', 0, 'Login'),
+(377, 1, '2020-09-03 18:43:21', 0, 'Logout'),
+(378, 1, '2020-09-03 18:43:25', 0, 'Login'),
+(379, 1, '2020-09-03 18:59:40', 0, 'Logout'),
+(380, 1, '2020-09-03 19:06:30', 0, 'Login'),
+(381, 1, '2020-09-03 19:06:32', 0, 'Logout'),
+(382, 1, '2020-09-03 20:40:20', 0, 'Login');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_voucher`
+-- Table structure for table `tb_voucher`
 --
 
 CREATE TABLE `tb_voucher` (
   `id_voucher` int(11) NOT NULL,
-  `kodevoucher` varchar(20) NOT NULL,
+  `kodevoucher` varchar(50) NOT NULL,
   `nama` varchar(100) NOT NULL,
   `ket` varchar(200) NOT NULL,
   `minpembelian` int(11) NOT NULL,
@@ -8424,10 +8734,17 @@ CREATE TABLE `tb_voucher` (
   `tglupdate` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `tb_voucher`
+--
+
+INSERT INTO `tb_voucher` (`id_voucher`, `kodevoucher`, `nama`, `ket`, `minpembelian`, `tglmulai`, `tglakhir`, `discount`, `id_user`, `tglupdate`) VALUES
+(16, 'administrator-VC-02092020-1', 'Bigsale 0209', 'Cuci Gudang serba 5000', 100000, '0000-00-00', '2020-09-02', 20000, 8, '2020-09-02');
+
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_warna`
+-- Table structure for table `tb_warna`
 --
 
 CREATE TABLE `tb_warna` (
@@ -8438,378 +8755,413 @@ CREATE TABLE `tb_warna` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
+-- Dumping data for table `tb_warna`
+--
+
+INSERT INTO `tb_warna` (`id_warna`, `warna`, `id_user`, `tglupdate`) VALUES
+(1, 'Biru', 1, '2020-08-30'),
+(2, 'Merah', 1, '2020-08-30'),
+(3, 'Kuning', 1, '2020-08-30'),
+(5, 'Hijau', 1, '2020-08-30'),
+(6, 'putih', 1, '2020-09-03');
+
+--
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `tb_akses`
+-- Indexes for table `tb_akses`
 --
 ALTER TABLE `tb_akses`
   ADD PRIMARY KEY (`id_akses`);
 
 --
--- Indeks untuk tabel `tb_barang`
+-- Indexes for table `tb_barang`
 --
 ALTER TABLE `tb_barang`
   ADD PRIMARY KEY (`id_barang`);
 
 --
--- Indeks untuk tabel `tb_cabang`
+-- Indexes for table `tb_baranggaram`
+--
+ALTER TABLE `tb_baranggaram`
+  ADD PRIMARY KEY (`id_barang`);
+
+--
+-- Indexes for table `tb_cabang`
 --
 ALTER TABLE `tb_cabang`
   ADD PRIMARY KEY (`id_cabang`);
 
 --
--- Indeks untuk tabel `tb_dtljual`
+-- Indexes for table `tb_dtljual`
 --
 ALTER TABLE `tb_dtljual`
   ADD PRIMARY KEY (`id_dtljual`);
 
 --
--- Indeks untuk tabel `tb_dtlretubeli`
+-- Indexes for table `tb_dtlretubeli`
 --
 ALTER TABLE `tb_dtlretubeli`
   ADD PRIMARY KEY (`id_dtlreturbeli`);
 
 --
--- Indeks untuk tabel `tb_dtlreturjual`
+-- Indexes for table `tb_dtlreturjual`
 --
 ALTER TABLE `tb_dtlreturjual`
   ADD PRIMARY KEY (`id_dtlreturjual`);
 
 --
--- Indeks untuk tabel `tb_gudang`
+-- Indexes for table `tb_gudang`
 --
 ALTER TABLE `tb_gudang`
   ADD PRIMARY KEY (`id_gudang`);
 
 --
--- Indeks untuk tabel `tb_harga`
+-- Indexes for table `tb_harga`
 --
 ALTER TABLE `tb_harga`
   ADD PRIMARY KEY (`id_harga`);
 
 --
--- Indeks untuk tabel `tb_invoicejual`
+-- Indexes for table `tb_hargagaram`
+--
+ALTER TABLE `tb_hargagaram`
+  ADD PRIMARY KEY (`id_harga`);
+
+--
+-- Indexes for table `tb_invoicejual`
 --
 ALTER TABLE `tb_invoicejual`
   ADD PRIMARY KEY (`id_invoicejual`);
 
 --
--- Indeks untuk tabel `tb_kategori`
+-- Indexes for table `tb_kategori`
 --
 ALTER TABLE `tb_kategori`
   ADD PRIMARY KEY (`id_kategori`);
 
 --
--- Indeks untuk tabel `tb_kecamatan`
+-- Indexes for table `tb_kecamatan`
 --
 ALTER TABLE `tb_kecamatan`
   ADD PRIMARY KEY (`id_kecamatan`) USING BTREE;
 
 --
--- Indeks untuk tabel `tb_kode`
+-- Indexes for table `tb_kode`
 --
 ALTER TABLE `tb_kode`
   ADD PRIMARY KEY (`id_kode`);
 
 --
--- Indeks untuk tabel `tb_konversi`
+-- Indexes for table `tb_konversi`
 --
 ALTER TABLE `tb_konversi`
   ADD PRIMARY KEY (`id_konversi`);
 
 --
--- Indeks untuk tabel `tb_kota`
+-- Indexes for table `tb_kota`
 --
 ALTER TABLE `tb_kota`
   ADD PRIMARY KEY (`id_kota`);
 
 --
--- Indeks untuk tabel `tb_menu`
+-- Indexes for table `tb_menu`
 --
 ALTER TABLE `tb_menu`
   ADD PRIMARY KEY (`id_menu`);
 
 --
--- Indeks untuk tabel `tb_pelanggan`
+-- Indexes for table `tb_pelanggan`
 --
 ALTER TABLE `tb_pelanggan`
   ADD PRIMARY KEY (`id_pelanggan`);
 
 --
--- Indeks untuk tabel `tb_penjualan`
+-- Indexes for table `tb_penjualan`
 --
 ALTER TABLE `tb_penjualan`
   ADD PRIMARY KEY (`id_penjualan`);
 
 --
--- Indeks untuk tabel `tb_provinsi`
+-- Indexes for table `tb_provinsi`
 --
 ALTER TABLE `tb_provinsi`
   ADD PRIMARY KEY (`id_provinsi`);
 
 --
--- Indeks untuk tabel `tb_returbeli`
+-- Indexes for table `tb_returbeli`
 --
 ALTER TABLE `tb_returbeli`
   ADD PRIMARY KEY (`id_returpembelian`);
 
 --
--- Indeks untuk tabel `tb_returjual`
+-- Indexes for table `tb_returjual`
 --
 ALTER TABLE `tb_returjual`
   ADD PRIMARY KEY (`id_returjual`);
 
 --
--- Indeks untuk tabel `tb_sales`
+-- Indexes for table `tb_sales`
 --
 ALTER TABLE `tb_sales`
   ADD PRIMARY KEY (`id_sales`);
 
 --
--- Indeks untuk tabel `tb_satuan`
+-- Indexes for table `tb_satuan`
 --
 ALTER TABLE `tb_satuan`
   ADD PRIMARY KEY (`id_satuan`);
 
 --
--- Indeks untuk tabel `tb_sjpenjualan`
+-- Indexes for table `tb_sjpenjualan`
 --
 ALTER TABLE `tb_sjpenjualan`
   ADD PRIMARY KEY (`id_sjpenjualan`);
 
 --
--- Indeks untuk tabel `tb_staf`
+-- Indexes for table `tb_staf`
 --
 ALTER TABLE `tb_staf`
   ADD PRIMARY KEY (`id_user`);
 
 --
--- Indeks untuk tabel `tb_stok`
+-- Indexes for table `tb_stok`
 --
 ALTER TABLE `tb_stok`
   ADD PRIMARY KEY (`id_stok`);
 
 --
--- Indeks untuk tabel `tb_stokopname`
+-- Indexes for table `tb_stokopname`
 --
 ALTER TABLE `tb_stokopname`
   ADD PRIMARY KEY (`id_stokopname`);
 
 --
--- Indeks untuk tabel `tb_submenu`
+-- Indexes for table `tb_submenu`
 --
 ALTER TABLE `tb_submenu`
   ADD PRIMARY KEY (`id_submenu`);
 
 --
--- Indeks untuk tabel `tb_suplier`
+-- Indexes for table `tb_suplier`
 --
 ALTER TABLE `tb_suplier`
   ADD PRIMARY KEY (`id_suplier`);
 
 --
--- Indeks untuk tabel `tb_tipeuser`
+-- Indexes for table `tb_tipeuser`
 --
 ALTER TABLE `tb_tipeuser`
   ADD PRIMARY KEY (`id_tipeuser`);
 
 --
--- Indeks untuk tabel `tb_userlog`
+-- Indexes for table `tb_userlog`
 --
 ALTER TABLE `tb_userlog`
   ADD PRIMARY KEY (`id_userlog`);
 
 --
--- Indeks untuk tabel `tb_voucher`
+-- Indexes for table `tb_voucher`
 --
 ALTER TABLE `tb_voucher`
   ADD PRIMARY KEY (`id_voucher`);
 
 --
--- Indeks untuk tabel `tb_warna`
+-- Indexes for table `tb_warna`
 --
 ALTER TABLE `tb_warna`
   ADD PRIMARY KEY (`id_warna`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `tb_akses`
+-- AUTO_INCREMENT for table `tb_akses`
 --
 ALTER TABLE `tb_akses`
-  MODIFY `id_akses` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=97;
+  MODIFY `id_akses` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=386;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_barang`
+-- AUTO_INCREMENT for table `tb_barang`
 --
 ALTER TABLE `tb_barang`
-  MODIFY `id_barang` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_barang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_cabang`
+-- AUTO_INCREMENT for table `tb_baranggaram`
+--
+ALTER TABLE `tb_baranggaram`
+  MODIFY `id_barang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `tb_cabang`
 --
 ALTER TABLE `tb_cabang`
-  MODIFY `id_cabang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_cabang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_dtljual`
+-- AUTO_INCREMENT for table `tb_dtljual`
 --
 ALTER TABLE `tb_dtljual`
   MODIFY `id_dtljual` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_dtlretubeli`
+-- AUTO_INCREMENT for table `tb_dtlretubeli`
 --
 ALTER TABLE `tb_dtlretubeli`
   MODIFY `id_dtlreturbeli` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_dtlreturjual`
+-- AUTO_INCREMENT for table `tb_dtlreturjual`
 --
 ALTER TABLE `tb_dtlreturjual`
   MODIFY `id_dtlreturjual` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_gudang`
+-- AUTO_INCREMENT for table `tb_gudang`
 --
 ALTER TABLE `tb_gudang`
-  MODIFY `id_gudang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_gudang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_harga`
+-- AUTO_INCREMENT for table `tb_harga`
 --
 ALTER TABLE `tb_harga`
-  MODIFY `id_harga` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_harga` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_invoicejual`
+-- AUTO_INCREMENT for table `tb_hargagaram`
+--
+ALTER TABLE `tb_hargagaram`
+  MODIFY `id_harga` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `tb_invoicejual`
 --
 ALTER TABLE `tb_invoicejual`
   MODIFY `id_invoicejual` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_kategori`
+-- AUTO_INCREMENT for table `tb_kategori`
 --
 ALTER TABLE `tb_kategori`
-  MODIFY `id_kategori` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_kategori` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_kode`
+-- AUTO_INCREMENT for table `tb_kode`
 --
 ALTER TABLE `tb_kode`
-  MODIFY `id_kode` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id_kode` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_konversi`
+-- AUTO_INCREMENT for table `tb_konversi`
 --
 ALTER TABLE `tb_konversi`
-  MODIFY `id_konversi` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_konversi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_menu`
+-- AUTO_INCREMENT for table `tb_menu`
 --
 ALTER TABLE `tb_menu`
   MODIFY `id_menu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_pelanggan`
+-- AUTO_INCREMENT for table `tb_pelanggan`
 --
 ALTER TABLE `tb_pelanggan`
-  MODIFY `id_pelanggan` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_pelanggan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_penjualan`
+-- AUTO_INCREMENT for table `tb_penjualan`
 --
 ALTER TABLE `tb_penjualan`
   MODIFY `id_penjualan` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_returbeli`
+-- AUTO_INCREMENT for table `tb_returbeli`
 --
 ALTER TABLE `tb_returbeli`
   MODIFY `id_returpembelian` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_returjual`
+-- AUTO_INCREMENT for table `tb_returjual`
 --
 ALTER TABLE `tb_returjual`
   MODIFY `id_returjual` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_sales`
+-- AUTO_INCREMENT for table `tb_sales`
 --
 ALTER TABLE `tb_sales`
   MODIFY `id_sales` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_satuan`
+-- AUTO_INCREMENT for table `tb_satuan`
 --
 ALTER TABLE `tb_satuan`
-  MODIFY `id_satuan` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_satuan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_sjpenjualan`
+-- AUTO_INCREMENT for table `tb_sjpenjualan`
 --
 ALTER TABLE `tb_sjpenjualan`
   MODIFY `id_sjpenjualan` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_staf`
+-- AUTO_INCREMENT for table `tb_staf`
 --
 ALTER TABLE `tb_staf`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_stok`
+-- AUTO_INCREMENT for table `tb_stok`
 --
 ALTER TABLE `tb_stok`
   MODIFY `id_stok` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_stokopname`
+-- AUTO_INCREMENT for table `tb_stokopname`
 --
 ALTER TABLE `tb_stokopname`
   MODIFY `id_stokopname` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_submenu`
+-- AUTO_INCREMENT for table `tb_submenu`
 --
 ALTER TABLE `tb_submenu`
-  MODIFY `id_submenu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `id_submenu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_suplier`
+-- AUTO_INCREMENT for table `tb_suplier`
 --
 ALTER TABLE `tb_suplier`
-  MODIFY `id_suplier` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_suplier` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_tipeuser`
+-- AUTO_INCREMENT for table `tb_tipeuser`
 --
 ALTER TABLE `tb_tipeuser`
-  MODIFY `id_tipeuser` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id_tipeuser` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_userlog`
+-- AUTO_INCREMENT for table `tb_userlog`
 --
 ALTER TABLE `tb_userlog`
-  MODIFY `id_userlog` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=64;
+  MODIFY `id_userlog` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=383;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_voucher`
+-- AUTO_INCREMENT for table `tb_voucher`
 --
 ALTER TABLE `tb_voucher`
-  MODIFY `id_voucher` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_voucher` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_warna`
+-- AUTO_INCREMENT for table `tb_warna`
 --
 ALTER TABLE `tb_warna`
-  MODIFY `id_warna` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_warna` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
