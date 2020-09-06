@@ -222,7 +222,7 @@ class M_Setting extends CI_Model {
         $this->db->join('tb_submenu', 'tb_submenu.id_menus = tb_menu.id_menu');
         $this->db->join('tb_akses', 'tb_akses.id_submenu = tb_submenu.id_submenu');
         $where = array(
-            'tb_akses.id_tipeuser' => $id, 'tb_akses.view' => '1'
+            'tb_akses.id_tipeuser' => $id, 'tb_akses.view' => '1', 'tb_submenu.statusmenu' => 'aktif'
         );
         $query = $this->db->get_where('tb_menu', $where);
         return $query->result();
