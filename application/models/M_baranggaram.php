@@ -40,14 +40,15 @@ class M_baranggaram extends CI_Model {
     //     return $this->db->get_where('tb_baranggaram',$where)->result();
     // }
 
-    function tambahdata($id){
+    function tambahdata($id, $fotobarang){
         $harga = $this->input->post('rupiah');
         $harga_str = preg_replace("/[^0-9]/", "", $harga);
 
         $barang = array(
+            'fotobarang' => $fotobarang,
             'barang' => $this->input->post('barang'),
             'barcode' => $this->input->post('barcode'),
-            'expaid' => date('Y-m-d'),
+            'expaid' => $this->input->post('expaid'),
             'id_gudang' => $this->input->post('gudang'),
             'id_cabang' => $this->input->post('namacabang'),
             'id_satuan' => $this->input->post('satuan'),
@@ -105,9 +106,11 @@ class M_baranggaram extends CI_Model {
         $harga_str = preg_replace("/[^0-9]/", "", $harga);
 
         $barang = array(
+            
+            'fotobarang' => $this->input->post('fotobarang'),
             'barang' => $this->input->post('barang'),
             'barcode' => $this->input->post('barcode'),
-            'expaid' => date('Y-m-d'),
+            'expaid' => $this->input->post('expaid'),
             'id_gudang' => $this->input->post('gudang'),
             'id_cabang' => $this->input->post('namacabang'),
             'id_satuan' => $this->input->post('satuan'),
