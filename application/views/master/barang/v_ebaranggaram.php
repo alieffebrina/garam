@@ -38,6 +38,13 @@
             <form class="form-horizontal" method="POST" action="<?php echo site_url('C_baranggaram/editbarang')?>">
               <div class="box-body">
                 <?php foreach ($barang as $barang) { ?>
+
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label">Foto Barang</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="fotobarang" name="fotobarang" value="<?php echo $barang->fotobarang ?>">
+                  </div>
+                </div>
                 
                 <div class="form-group">
                   <label for="inputEmail3" class="col-sm-2 control-label">Nama Barang</label>

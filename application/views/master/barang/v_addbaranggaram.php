@@ -35,8 +35,15 @@
             </div>
             <!-- /.box-header -->
             <!-- form start -->
-            <form class="form-horizontal" method="POST" action="<?php echo site_url('C_baranggaram/tambah')?>">
+            <form class="form-horizontal" method="POST" action="<?php echo site_url('C_baranggaram/tambah')?>" enctype="multipart/form-data">
               <div class="box-body">
+
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label">Foto Barang</label>
+                  <div class="col-sm-9">
+                    <input type="file" name="fotobarang" id="fotobarang">
+                  </div>
+                </div>
                 
                  <div class="form-group">
                   <label for="inputEmail3" class="col-sm-2 control-label">Nama Barang</label>
@@ -176,7 +183,7 @@
               <div class="box-footer">
                   <div class="col-sm-10">
                     <a href="<?php echo site_url('C_baranggaram/index'); ?>" class="btn btn-default">Batal</a>
-                    <button type="submit" class="btn btn-info">Simpan Data</button>
+                    <input type="submit" name='simpan' class="btn btn-info" value='Simpan Data'>
                   </div>
               </div>
               <!-- /.box-footer -->
