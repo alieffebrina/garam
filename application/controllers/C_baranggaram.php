@@ -68,45 +68,79 @@ class C_baranggaram extends CI_Controller{
          
     }
 
-    function ceksatuan(){
-            // Ambil data ID Provinsi yang dikirim via ajax post
-            $idbarang = $this->input->post('id_barang');
+    // function ceksatuan(){
+    //         // Ambil data ID Provinsi yang dikirim via ajax post
+    //         $idbarang = $this->input->post('id_barang');
             
-            $hasil_kode = $this->M_baranggaram->getspek($idbarang);
+    //         $hasil_kode = $this->M_baranggaram->getspek($idbarang);
             
-            // Buat variabel untuk menampung tag-tag option nya
-            // Set defaultnya dengan tag option Pilih
-            // $lists = " <input type='text' class='form-control' id='nama_suplier' name='nama_suplier' readonly>";
-            $lists=$list_namabarang=$harga=$kategori='';
-            foreach($hasil_kode as $data){
-              // $lists .= " <input type='text' class='form-control' id='nama_suplier' name='nama_suplier' value='".$data->satuan."' readonly>"; // Tambahkan tag option ke variabel $lists
-              // $ala = $data->alamat;
-                $harga = "<input type='hidden' class='form-control' onfocus='startCalculate()' onblur='stopCalc()' name='harga' id='harga' value='".$data->hargabeli."'>
-                    <input type='text' class='form-control' onfocus='startCalculate()' onblur='stopCalc()' name='hargashow' id='hargashow' value='Rp. ".number_format($data->hargabeli)."'>";
-                $lists = "<input type='hidden' class='form-control' name='satuan' id='satuan' value='".$data->nama_satuan."'><input type='hidden' class='form-control' name='kodesatuan' id='kodesatuan' value='".$data->id_satuan."'><input type='hidden' class='form-control' name='qttkonversi' id='qttkonversi' value='".$data->qttkonversi."'>".$data->nama_satuan;
-                $list_namabarang = "<input type='hidden' class='form-control' name='namabarangshow' id='namabarangshow' value='".$data->barang.'/'.$data->kategori."'>
-                <input type='hidden' class='form-control' name='stokaw' id='stokaw' value='".$data->hasil_konversi."'>";
-                $kategori = $data->kategori;
-            }
+    //         // Buat variabel untuk menampung tag-tag option nya
+    //         // Set defaultnya dengan tag option Pilih
+    //         // $lists = " <input type='text' class='form-control' id='nama_suplier' name='nama_suplier' readonly>";
+    //         $lists=$list_namabarang=$harga=$kategori='';
+    //         foreach($hasil_kode as $data){
+    //           // $lists .= " <input type='text' class='form-control' id='nama_suplier' name='nama_suplier' value='".$data->satuan."' readonly>"; // Tambahkan tag option ke variabel $lists
+    //           // $ala = $data->alamat;
+    //             $harga = "<input type='hidden' class='form-control' onfocus='startCalculate()' onblur='stopCalc()' name='harga' id='harga' value='".$data->hargabeli."'>
+    //                 <input type='text' class='form-control' onfocus='startCalculate()' onblur='stopCalc()' name='hargashow' id='hargashow' value='Rp. ".number_format($data->hargabeli)."'>";
+    //             $lists = "<input type='hidden' class='form-control' name='satuan' id='satuan' value='".$data->nama_satuan."'><input type='hidden' class='form-control' name='kodesatuan' id='kodesatuan' value='".$data->id_satuan."'><input type='hidden' class='form-control' name='qttkonversi' id='qttkonversi' value='".$data->qttkonversi."'>".$data->nama_satuan;
+    //             $list_namabarang = "<input type='hidden' class='form-control' name='namabarangshow' id='namabarangshow' value='".$data->barang.'/'.$data->kategori."'>
+    //             <input type='hidden' class='form-control' name='stokaw' id='stokaw' value='".$data->hasil_konversi."'>";
+    //             $kategori = $data->kategori;
+    //         }
             
-            // $lists = " <input type='text' class='form-control' id='nama_suplier' name='nama_suplier' value='".$hasil_kode."' readonly>";
+    //         // $lists = " <input type='text' class='form-control' id='nama_suplier' name='nama_suplier' value='".$hasil_kode."' readonly>";
 
-            $callback = array('list_satuan'=>$lists, 'list_harga'=>$harga, 'list_namabarang' =>$list_namabarang, 'kategori' =>$kategori); // Masukan variabel lists tadi ke dalam array $callback dengan index array : list_kota
-            echo json_encode($callback); // konversi varibael $callback menjadi JSON
-    }
+    //         $callback = array('list_satuan'=>$lists, 'list_harga'=>$harga, 'list_namabarang' =>$list_namabarang, 'kategori' =>$kategori); // Masukan variabel lists tadi ke dalam array $callback dengan index array : list_kota
+    //         echo json_encode($callback); // konversi varibael $callback menjadi JSON
+    // }
 
     public function tambah()
     {   
 
-        $id = $this->session->userdata('id_user');
-        $this->M_baranggaram->tambahdata($id);
-        
-        $id_submenu = '40';
-        $ket = 'tambah data barang garam';
-        $this->M_Setting->userlog($id, $id_submenu, $ket);
+         if (isset($_POST['simpan'])) {
+        //buat folder bernama gambar
+            // print_r($_FILES);exit;
+            $tempdir = "uploadgambar/"; 
+            if (!file_exists($tempdir))
+                mkdir($tempdir,0755); 
+            //gambar akan di simpan di folder gambar
+            $target_path = $tempdir . basename($_FILES['fotobarang']['name']);
 
-        $this->session->set_flashdata('Sukses', "Data Barang Berhasil Di Tambahkan.");
-        redirect('C_baranggaram');
+            //nama gambar
+            $nama_gambar=$_FILES['fotobarang']['name'];
+            //ukuran gambar
+            $ukuran_gambar = $_FILES['fotobarang']['size']; 
+
+            $fileinfo = @getimagesize($_FILES["fotobarang"]["tmp_name"]);
+            //lebar gambar
+            $width = $fileinfo[0];
+            //tinggi gambar
+            $height = $fileinfo[1]; 
+            if($ukuran_gambar > 2000000){ 
+                $this->session->set_flashdata('Sukses', "Ukuran gambar melebihi 80kb");
+            }else if ($width > "472" || $height > "709") {
+                $this->session->set_flashdata('Sukses', "Ukuran gambar harus 472x709");
+            }else{
+                if (move_uploaded_file($_FILES['fotobarang']['tmp_name'], $target_path)) {
+                    $id = $this->session->userdata('id_user');
+
+                    $this->M_baranggaram->tambahdata($id,$nama_gambar);
+                    
+                    $id_submenu = '40';
+                    $ket = 'tambah data barang';
+                    $this->M_Setting->userlog($id, $id_submenu, $ket);
+
+                    $this->session->set_flashdata('Sukses', "Data Barang Berhasil Di Tambahkan.");
+                } else {
+                    echo 'gagal upload';
+                    $this->session->set_flashdata('Sukses', "Data Barang Gagal Di Tambahkan.");
+                }
+            } 
+            redirect('C_baranggaram');
+        }else{
+            echo 'eror';
+        }
     }
 
     function view($ida)
